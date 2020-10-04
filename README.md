@@ -40,6 +40,6 @@
 
 ## 피드백, 보완점
 
-https://github.com/Hansanghyeon/portfolio-gallery/issues/3
-https://github.com/Hansanghyeon/portfolio-gallery/issues/2
-https://github.com/Hansanghyeon/portfolio-gallery/issues/1
+- [#3](https://github.com/Hansanghyeon/portfolio-gallery/issues/3)
+- [#2](https://github.com/Hansanghyeon/portfolio-gallery/issues/2)
+- [#1](https://github.com/Hansanghyeon/portfolio-gallery/issues/1)
