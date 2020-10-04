@@ -1,0 +1,389 @@
+@charset "utf-8";
+@import url(http://fonts.googleais.com/css?family=Poiret+One);
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  outline: 0;
+  text-decoration: none;
+  color: #555;
+}
+img {
+  border: 0;
+}
+body {
+  font-family: "poiret one", sans-serif;
+  background: #030212;
+}
+
+._gallery {
+  /*logo*/
+  h1 {
+    width: 10vw;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+  }
+  h1 img {
+    width: 100%;
+  }
+
+  /*sns*/
+  #sns {
+    position: fixed;
+    top: 30px;
+    left: 60px;
+  }
+  #sns li {
+    float: left;
+    margin-right: 30px;
+  }
+  #sns li i {
+    font-size: 25px;
+    color: white;
+    transition: all 0.5s;
+  }
+  #sns .instagram:hover i {
+    transform: scale(1.5);
+    color: white;
+  }
+  #sns .email:hover i {
+    transform: scale(1.5);
+    color: green;
+  }
+  #sns .behance:hover i {
+    transform: scale(1.5);
+    color: #0057ff;
+  }
+
+  /*메뉴*/
+  #navi {
+    position: fixed;
+    top: 50%;
+    left: 60px;
+    margin-top: -280px;
+  }
+  #navi li {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #navi li:hover {
+    color: #888;
+  }
+  #navi li.on {
+    color: #888;
+  }
+
+  /*슬로건*/
+  .txt {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    margin-top: -80px;
+    font-size: 100px;
+    color: #fff;
+    text-align: right;
+    line-height: 0.5;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+  }
+  .txt span {
+    color: #aaa;
+  }
+  .txt em {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    color: #888;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  /*copyright*/
+  .copyright {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font: 12px arial;
+    letter-spacing: 4px;
+    color: #999;
+    text-align: center;
+  }
+
+  /*레이아웃*/
+  section {
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    margin-top: -250px;
+    width: 3500px;
+    height: 500px;
+  }
+  article {
+    position: relative;
+    top: 50%;
+    width: 180px;
+    height: 400px;
+    margin: 10px;
+    margin-top: -200px;
+    box-sizing: border-box;
+    float: left;
+    background: #ffe943;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000000;
+    overflow: hidden;
+    transition: all 0.7s;
+  }
+
+  /* 포폴 제목 */
+  article h2 {
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    background: #111;
+    opacity: 0.4;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  /*포폴 썸네일*/
+  article strong {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+    opacity: 0.4;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  article:hover strong {
+    opacity: 1;
+  }
+  article strong img {
+    height: 300px;
+    width: auto;
+  }
+
+  /*포폴 이미지*/
+  article p {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    z-index: 1;
+    margin-top: 0px;
+    width: 100%;
+    height: 0px;
+    text-align: center;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+    opacity: 0.8s;
+    transition: all 1s;
+  }
+  /*포폴 설명*/
+  article em {
+    position: absolute;
+    bottom: 50px;
+    right: -300px;
+    z-index: 2;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    opacity: 0.8;
+    transition: all 1s;
+  }
+
+  /*div*/
+  div {
+    position: relative;
+    top: 50%;
+    width: 180px;
+    height: 400px;
+    margin: 10px;
+    margin-top: -200px;
+    box-sizing: border-box;
+    float: left;
+    background: #fff;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000000;
+    overflow: hidden;
+    transition: all 0.7s;
+  }
+
+  /* 포폴 제목 */
+  div h2 {
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    background: #111;
+    opacity: 0.8;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  /*포폴 썸네일*/
+  div strong {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+    opacity: 0.4;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  div:hover strong {
+    opacity: 1;
+  }
+  div strong img {
+    height: 300px;
+    width: auto;
+  }
+
+  /*포폴 이미지*/
+  div p {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    z-index: 1;
+    margin-top: 0px;
+    width: 100%;
+    height: 0px;
+    text-align: center;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+    opacity: 0.8s;
+    transition: all 1s;
+  }
+  /*포폴 설명*/
+  div em {
+    position: absolute;
+    bottom: 50px;
+    right: -300px;
+    z-index: 2;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    opacity: 0.8;
+    transition: all 1s;
+  }
+  /*닫기 버튼*/
+  section span {
+    position: absolute;
+    top: 100px;
+    right: -300px;
+    z-index: 3;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  /*클릭 시 변형된 모습 세운A4*/
+  article.on {
+    width: 480px;
+    height: 680px;
+    margin-top: -250px;
+  }
+  article.on h2 {
+    top: 100px;
+    height: 100px;
+    background: #111;
+    opacity: 0.3;
+  }
+  article.on h2 a {
+    font-size: 30px;
+    color: #fff;
+  }
+  article.on strong {
+    opacity: 0;
+  }
+  article.on p {
+    height: 680px;
+    margin-top: -340px;
+    opacity: 1;
+    background-color: white;
+  }
+  article.on p img {
+    height: 100%;
+  }
+  article.on em {
+    right: 20px;
+  }
+  article.on span {
+    right: 20px;
+  }
+  /*클릭 시 변형된 모습 눕힌A4*/
+  div.on {
+    width: 720px;
+    height: 510px;
+    margin-top: -250px;
+  }
+  div.on h2 {
+    top: 100px;
+    height: 100px;
+    background: #111;
+    opacity: 0.3;
+  }
+  div.on h2 a {
+    font-size: 30px;
+    color: #fff;
+  }
+  div.on strong {
+    opacity: 0;
+  }
+  div.on p {
+    height: 510px;
+    margin-top: -255px;
+    opacity: 1;
+    background-color: white;
+  }
+  div.on p img {
+    height: 100%;
+  }
+  div.on em {
+    right: 20px;
+  }
+  div.on span {
+    right: 20px;
+  }
+  /*강제 스크롤바생성*/
+  body {
+    width: 100%;
+    min-width: 1400px;
+    height: 2600px;
+    font-family: poiret one;
+    background: #030212;
+  }
+}

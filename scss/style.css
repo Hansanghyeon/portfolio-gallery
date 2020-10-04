@@ -1,0 +1,455 @@
+@charset "UTF-8";
+@import url(http://fonts.googleais.com/css?family=Poiret+One);
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  outline: 0;
+  text-decoration: none;
+  color: #555;
+}
+
+img {
+  border: 0;
+}
+
+body {
+  font-family: "poiret one", sans-serif;
+  background: #030212;
+}
+
+._gallery {
+  /*logo*/
+  /*sns*/
+  /*메뉴*/
+  /*슬로건*/
+  /*copyright*/
+  /*레이아웃*/
+  /* 포폴 제목 */
+  /*포폴 썸네일*/
+  /*포폴 이미지*/
+  /*포폴 설명*/
+  /*div*/
+  /* 포폴 제목 */
+  /*포폴 썸네일*/
+  /*포폴 이미지*/
+  /*포폴 설명*/
+  /*닫기 버튼*/
+  /*클릭 시 변형된 모습 세운A4*/
+  /*클릭 시 변형된 모습 눕힌A4*/
+  /*강제 스크롤바생성*/
+}
+
+._gallery h1 {
+  width: 10vw;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+}
+
+._gallery h1 img {
+  width: 100%;
+}
+
+._gallery #sns {
+  position: fixed;
+  top: 30px;
+  left: 60px;
+}
+
+._gallery #sns li {
+  float: left;
+  margin-right: 30px;
+}
+
+._gallery #sns li i {
+  font-size: 25px;
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+._gallery #sns .instagram:hover i {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: white;
+}
+
+._gallery #sns .email:hover i {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: green;
+}
+
+._gallery #sns .behance:hover i {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #0057ff;
+}
+
+._gallery #navi {
+  position: fixed;
+  top: 50%;
+  left: 60px;
+  margin-top: -280px;
+}
+
+._gallery #navi li {
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 25px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+._gallery #navi li:hover {
+  color: #888;
+}
+
+._gallery #navi li.on {
+  color: #888;
+}
+
+._gallery .txt {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  margin-top: -80px;
+  font-size: 100px;
+  color: #fff;
+  text-align: right;
+  line-height: 0.5;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+
+._gallery .txt span {
+  color: #aaa;
+}
+
+._gallery .txt em {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  color: #888;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+._gallery .copyright {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font: 12px arial;
+  letter-spacing: 4px;
+  color: #999;
+  text-align: center;
+}
+
+._gallery section {
+  position: fixed;
+  top: 50%;
+  left: 0px;
+  margin-top: -250px;
+  width: 3500px;
+  height: 500px;
+}
+
+._gallery article {
+  position: relative;
+  top: 50%;
+  width: 180px;
+  height: 400px;
+  margin: 10px;
+  margin-top: -200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  background: #ffe943;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 3px #000000;
+          box-shadow: 3px 3px 3px #000000;
+  overflow: hidden;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+._gallery article h2 {
+  position: absolute;
+  top: 300px;
+  right: 0px;
+  width: 100%;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 20px;
+  background: #111;
+  opacity: 0.4;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+._gallery article strong {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 300px;
+  opacity: 0.4;
+  overflow: hidden;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+._gallery article:hover strong {
+  opacity: 1;
+}
+
+._gallery article strong img {
+  height: 300px;
+  width: auto;
+}
+
+._gallery article p {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  z-index: 1;
+  margin-top: 0px;
+  width: 100%;
+  height: 0px;
+  text-align: center;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+  opacity: 0.8s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+._gallery article em {
+  position: absolute;
+  bottom: 50px;
+  right: -300px;
+  z-index: 2;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  opacity: 0.8;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+._gallery div {
+  position: relative;
+  top: 50%;
+  width: 180px;
+  height: 400px;
+  margin: 10px;
+  margin-top: -200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  background: #fff;
+  background-color: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 3px #000000;
+          box-shadow: 3px 3px 3px #000000;
+  overflow: hidden;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+._gallery div h2 {
+  position: absolute;
+  top: 300px;
+  right: 0px;
+  width: 100%;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 20px;
+  background: #111;
+  opacity: 0.8;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+._gallery div strong {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 300px;
+  opacity: 0.4;
+  overflow: hidden;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+._gallery div:hover strong {
+  opacity: 1;
+}
+
+._gallery div strong img {
+  height: 300px;
+  width: auto;
+}
+
+._gallery div p {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  z-index: 1;
+  margin-top: 0px;
+  width: 100%;
+  height: 0px;
+  text-align: center;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+  opacity: 0.8s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+._gallery div em {
+  position: absolute;
+  bottom: 50px;
+  right: -300px;
+  z-index: 2;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  opacity: 0.8;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+._gallery section span {
+  position: absolute;
+  top: 100px;
+  right: -300px;
+  z-index: 3;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+._gallery article.on {
+  width: 480px;
+  height: 680px;
+  margin-top: -250px;
+}
+
+._gallery article.on h2 {
+  top: 100px;
+  height: 100px;
+  background: #111;
+  opacity: 0.3;
+}
+
+._gallery article.on h2 a {
+  font-size: 30px;
+  color: #fff;
+}
+
+._gallery article.on strong {
+  opacity: 0;
+}
+
+._gallery article.on p {
+  height: 680px;
+  margin-top: -340px;
+  opacity: 1;
+  background-color: white;
+}
+
+._gallery article.on p img {
+  height: 100%;
+}
+
+._gallery article.on em {
+  right: 20px;
+}
+
+._gallery article.on span {
+  right: 20px;
+}
+
+._gallery div.on {
+  width: 720px;
+  height: 510px;
+  margin-top: -250px;
+}
+
+._gallery div.on h2 {
+  top: 100px;
+  height: 100px;
+  background: #111;
+  opacity: 0.3;
+}
+
+._gallery div.on h2 a {
+  font-size: 30px;
+  color: #fff;
+}
+
+._gallery div.on strong {
+  opacity: 0;
+}
+
+._gallery div.on p {
+  height: 510px;
+  margin-top: -255px;
+  opacity: 1;
+  background-color: white;
+}
+
+._gallery div.on p img {
+  height: 100%;
+}
+
+._gallery div.on em {
+  right: 20px;
+}
+
+._gallery div.on span {
+  right: 20px;
+}
+
+._gallery body {
+  width: 100%;
+  min-width: 1400px;
+  height: 2600px;
+  font-family: poiret one;
+  background: #030212;
+}
+/*# sourceMappingURL=style.css.map */
