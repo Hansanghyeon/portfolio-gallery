@@ -42,6 +42,4 @@
 
 ## 피드백, 보완점
 
-- [#3](https://github.com/Hansanghyeon/portfolio-gallery/issues/3)
-- [#2](https://github.com/Hansanghyeon/portfolio-gallery/issues/2)
-- [#1](https://github.com/Hansanghyeon/portfolio-gallery/issues/1)
+[📎 Link](https://github.com/Hansanghyeon/portfolio-gallery/issues?q=is%3Aissue+sort%3Aupdated-desc+label%3AFeedBack+)
