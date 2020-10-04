@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./static/gallery.png" />
+</p>
+
 # portfolio-gallery
 
 ![](https://img.shields.io/badge/webdesign-Graphic-brightgreen)
